@@ -47,12 +47,12 @@ public class ProgramKasir {
         System.out.print("Jumlah barang yang akan dibeli : ");
         jmlhBrng = scan.nextInt();
         hasil = harga * jmlhBrng;
-        if (hasil > 100000){
-            diskon = hasil*0.1;
+        if (hasil > 500000){
+            diskon = hasil*0.5;
         }else if (hasil > 200000){
             diskon = hasil*0.2;
-        }else if (hasil > 500000){
-            diskon = hasil*0.5;
+        }else if (hasil > 100000){
+            diskon = hasil*0.1;
         }else{
             total = hasil;
         }
@@ -63,8 +63,13 @@ public class ProgramKasir {
         System.out.println();
         System.out.print("Pembayaran Uang = Rp ");
         uang = scan.nextInt();
-        kembali = uang - total;
-        System.out.println("Kembali = Rp " + kembali);
+        if (uang > total){
+            kembali = uang - total;
+            System.out.println("Kembali = Rp " + kembali);
+        }else {
+            System.out.println("Uang anda kurang");
+        }
+        
     }
     
 }
