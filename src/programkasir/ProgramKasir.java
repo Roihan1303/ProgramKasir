@@ -31,15 +31,19 @@ public class ProgramKasir {
         pilih = scan.nextInt();
         if (pilih == 1) {
             System.out.println("Kode : 001");
+            System.out.println("Harga : Rp 3000");
             harga = 3000;
         }else if(pilih == 2){
             System.out.println("Kode : 002");
             harga = 5000;
+            System.out.println("Harga : Rp 5000");
         }else if(pilih == 3){
             System.out.println("Kode : 003");
+            System.out.println("Harga : Rp 2000");
             harga = 2000;
         }else if(pilih == 4){
             System.out.println("Kode : 005");
+            System.out.println("Harga : Rp 1000");
             harga = 1000;
         }else{}
         
